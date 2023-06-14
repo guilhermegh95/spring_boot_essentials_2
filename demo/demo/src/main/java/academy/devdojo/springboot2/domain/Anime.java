@@ -1,21 +1,12 @@
 package academy.devdojo.springboot2.domain;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
 public class Anime {
+    public Long id;
     public String name;
 
-    public Anime(String name) {
-        this.name = name;
-    }
-
-    public Anime() {
-
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 }
